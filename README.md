@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/snowio/akeneo2-magento2-integration/branch/master/graph/badge.svg)](https://codecov.io/gh/snowio/akeneo2-magento2-integration)
 
 
-Package Used to integration Akeneo 2 With Magento.
+Akeneo 2 With Magento integration package.
 
 
 ### Prerequisites
