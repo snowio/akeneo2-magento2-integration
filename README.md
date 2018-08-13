@@ -1,5 +1,8 @@
 # Akeneo 2 Magento Integration Package
 
+[![Build Status](https://travis-ci.com/snowio/akeneo2-magento2-integration.svg?branch=master)](https://travis-ci.com/snowio/akeneo2-magento2-integration)
+
+
 Package Used to integration Akeneo 2 With Magento.
 
 
