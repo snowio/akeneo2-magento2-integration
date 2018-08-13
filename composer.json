@@ -14,8 +14,7 @@
         }
     },
     "repositories": [
-        {"type": "composer", "url": "https://repo.packagist.com/snowio/"},
-        {"packagist.org": false}
+        {"type": "composer", "url": "https://repo.packagist.com/snowio/"}
     ],
     "autoload-dev": {
         "psr-4": {
