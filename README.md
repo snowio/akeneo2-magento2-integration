@@ -5,8 +5,8 @@ Package Used to integration Akeneo 2 With Magento.
 
 ### Prerequisites
 
-[akeneo2-data-model](https://github.com/snowio/akeneo2-data-model)
-[magento2-data-model](https://github.com/snowio/magento2-data-model)
+- [akeneo2-data-model](https://github.com/snowio/akeneo2-data-model)
+- [magento2-data-model](https://github.com/snowio/magento2-data-model)
 
 ### Installing
 
