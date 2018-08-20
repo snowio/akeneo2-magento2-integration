@@ -3,10 +3,6 @@
 [![Build Status](https://travis-ci.com/snowio/akeneo2-magento2-integration.svg?branch=master)](https://travis-ci.com/snowio/akeneo2-magento2-integration)
 [![codecov](https://codecov.io/gh/snowio/akeneo2-magento2-integration/branch/master/graph/badge.svg)](https://codecov.io/gh/snowio/akeneo2-magento2-integration)
 
-
-Akeneo 2 With Magento integration package.
-
-
 ### Prerequisites
 
 - [akeneo2-data-model](https://github.com/snowio/akeneo2-data-model)

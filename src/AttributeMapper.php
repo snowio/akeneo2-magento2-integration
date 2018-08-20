@@ -42,7 +42,7 @@ final class AttributeMapper extends DataMapper
             AttributeType::TEXT => FrontendInput::TEXT,
             AttributeType::TEXTAREA => FrontendInput::TEXTAREA,
             AttributeType::MULTISELECT => FrontendInput::MULTISELECT,
-            AttributeType::ASSETS_COLLECTION => FrontendInput::IMAGE
+            AttributeType::ASSETS_COLLECTION => FrontendInput::MEDIA_IMAGE
         ];
         return function (string $akeneoType) use ($typeToFrontendInputMap) {
             return $typeToFrontendInputMap[$akeneoType] ?? FrontendInput::TEXT;
