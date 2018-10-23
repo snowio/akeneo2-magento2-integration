@@ -14,15 +14,19 @@ final class AttributeOptionMapper extends DataMapper
 
     public function __invoke(Akeneo2AttributeOption $attributeOption): Magento2AttributeOption
     {
-        $optionCodes = explode('-', $attributeOption->getOptionCode());
-        $optionCode = count($optionCodes) >= 2 ? implode('-', array_slice($optionCodes, 1)) :
-            $attributeOption->getOptionCode();
-
         return Magento2AttributeOption::of(
             $attributeOption->getAttributeCode(),
-            $optionCode,
+            $this->obtainOptionCodeFromPrefixedOptionCode($attributeOption),
             $attributeOption->getLabel($this->defaultLocale) ?? $attributeOption->getOptionCode()
         );
+    }
+
+    private function obtainOptionCodeFromPrefixedOptionCode(Akeneo2AttributeOption $attributeOption)
+    {
+        $optionCodes = explode('-', $attributeOption->getOptionCode());
+        return count($optionCodes) >= 2 && $optionCodes[0] === $attributeOption->getAttributeCode() ?
+            implode('-', array_slice($optionCodes, 1)) :
+            $attributeOption->getOptionCode();
     }
 
     private $defaultLocale;
