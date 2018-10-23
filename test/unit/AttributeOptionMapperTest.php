@@ -21,4 +21,14 @@ class AttributeOptionMapperTest extends TestCase
         $expected = Magento2AttributeOption::of('size','large', 'Large');
         self::assertTrue($expected->equals($actual));
      }
+
+    public function testMapWithAttributeCodeAndOptionCode()
+    {
+        $input = AkeneoAttributeOption::of(AttributeOptionIdentifier::of('size', 'size-large'))
+            ->withLabel(LocalizedString::of('Large', 'en_GB'));
+        $mapper = AttributeOptionMapper::withDefaultLocale('en_GB');
+        $actual = $mapper($input);
+        $expected = Magento2AttributeOption::of('size','large', 'Large');
+        self::assertTrue($expected->equals($actual));
+    }
 }
